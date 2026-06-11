@@ -1,11 +1,10 @@
 # X-LogSMask: Expand Transformer for Graph-Structured Data
 
-[![Paper](https://img.shields.io/badge/Paper-TPAMI%202025-blue)](https://github.com/LiLeyan-0120/X-LogSMask)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Official PyTorch implementation of **X-LogSMask**, an explainable multi-head logarithmic structural mask that adapts Transformers for graph-structured data.
 
-**Authors:** Leyan Li, Rennong Yang, Zhenxing Zhang, Liping Hu
+**Author:** Leyan Li
 
 ---
 
@@ -218,11 +217,10 @@ CIFAR-10
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@article{li2025xlogsmask,
+@article{li2026xlogsmask,
   title={X-LogSMask: Expand Transformer for Graph-Structured Data},
   author={Li, Leyan and Yang, Rennong and Zhang, Zhenxing and Hu, Liping},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2025}
+  year={2026}
 }
 ```
 
