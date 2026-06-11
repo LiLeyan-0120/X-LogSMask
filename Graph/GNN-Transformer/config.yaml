@@ -1,0 +1,221 @@
+---
+
+
+
+# -------------------------------------------------------------------
+DD:            # Train model using DD dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    split:                        # Data split
+        test_prop:    0.1           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+    model:                        # Model parameters
+        dropout:      0.2900428862427288           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    89            # Node feature dimension
+        hidden_dim:   64            # Hidden layer output feature dimension
+        output_dim:   2             # Number of node classes
+        num_heads: 1              # Number of attention heads, set according to GPU memory
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 2       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.000915611363943115         # Optimizer initial learning rate
+        epochs:       1000            # Number of training epochs
+        patience:     100            # Early stopping patience
+        batch_size:   8             # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+
+
+
+# -------------------------------------------------------------------
+NCI1:          # Train model using NCI1 dataset
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    split:                        # Data split
+        test_prop:    0.1           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+    model:                        # Model parameters
+        dropout:      0.4           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    37            # Node feature dimension
+        output_dim:   2             # Number of node classes
+        hidden_dim:   48            # Hidden layer output feature dimension
+        num_heads: 6              # Number of attention heads, set according to GPU memory
+        num_layers: 4            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0005         # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     50            # Early stopping patience
+        batch_size:   8            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+
+
+
+# -------------------------------------------------------------------
+PROTEINS:      # Train model using PROTEINS dataset
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    split:                        # Data split
+        test_prop:    0.1           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+    model:                        # Model parameters
+        dropout:      0.38330857732148493           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    4             # Node feature dimension
+        output_dim:   2             # Number of node classes
+        hidden_dim:   32            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 4       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0004207278691533465        # Optimizer initial learning rate
+        epochs:       500          # Number of training epochs
+        patience:     50            # Early stopping patience
+        batch_size:   32            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20           # Learning rate warmup epochs
+
+
+# -------------------------------------------------------------------
+MUTAG:      # Train model using MUTAG dataset
+# -------------------------------------------------------------------
+    random_state:     1
+
+    # Random seed
+    split:                        # Data split
+        test_prop:    0.1           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+    model:                        # Model parameters
+        dropout:      0.2           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    7             # Node feature dimension
+        output_dim:   2             # Number of node classes
+        hidden_dim:   28            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 3            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0005        # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     100            # Early stopping patience
+        batch_size:   1            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+
+
+# -------------------------------------------------------------------
+COLLAB:         # Train model using COLLAB dataset
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    split:                        # Data split
+        test_prop:    0.1           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+    model:                        # Model parameters
+        dropout:      0.4           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    492             # Node feature dimension
+        output_dim:   3             # Number of node classes
+        hidden_dim:   16            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 3            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0005        # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     50            # Early stopping patience
+        batch_size:   16            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+
+
+# -------------------------------------------------------------------
+IMDB-BINARY:         # Train model using IMDB-BINARY dataset
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    split:                        # Data split
+        test_prop:    0.1           # Test set data ratio
+        valid_prop:   0.1        # Validation set data ratio
+    model:                        # Model parameters
+        dropout:      0.4           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    136             # Node feature dimension
+        output_dim:   2             # Number of node classes
+        hidden_dim:   16            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 3            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0005        # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     50            # Early stopping patience
+        batch_size:   16            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+
+
+# -------------------------------------------------------------------
+ZINC_full:         # Train model using ZINC_full dataset
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout:      0.4           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    28             # Node feature dimension
+        output_dim:   1             # Number of node classes
+        hidden_dim:   16            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 3            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0005        # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     50            # Early stopping patience
+        batch_size:   16            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+
+# -------------------------------------------------------------------
+ZINC:         # Train model using ZINC dataset
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout:      0.2           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    21             # Node feature dimension
+        output_dim:   1             # Number of node classes
+        hidden_dim:   84            # Hidden layer output feature dimension
+        num_heads: 6              # Number of attention heads, set according to GPU memory
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0005        # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     50            # Early stopping patience
+        batch_size:   2            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+
+# -------------------------------------------------------------------
+MOLHIV:         # Train model using MOLHIV dataset
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout:      0.2           # Dropout ratio
+        aggregate:    'sum'         # Node feature aggregation method
+        input_dim:    9             # Node feature dimension
+        output_dim:   2             # Number of node classes
+        hidden_dim:   84            # Hidden layer output feature dimension
+        num_heads: 6              # Number of attention heads, set according to GPU memory
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0005        # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     50            # Early stopping patience
+        batch_size:   64            # Batch data quantity
+        weight_decay: 0.0005        # Optimizer weight decay
+        warmup_epochs: 20          # Learning rate warmup epochs
+...

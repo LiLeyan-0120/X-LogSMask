@@ -1,0 +1,98 @@
+Data: cora
+Best Parameters:
+dropout: 0.5471391340112235
+hidden_dim: 256
+num_heads: 4
+dim_feedforward: 1
+num_layers: 2
+lr: 0.00014453710970845288
+num_nodes: 800
+batch_size: 4
+Best Validation Accuracy: 0.8270
+==================================================
+Data: citeseer
+Best Parameters:
+dropout: 0.5923673117461464 
+hidden_dim: 512
+num_heads: 8
+dim_feedforward: 3
+num_layers: 2
+lr: 0.00013912949909376026
+num_nodes: 1600
+batch_size: 8
+Best Validation Accuracy: 0.7170
+==================================================
+Data: pubmed
+Best Parameters:
+dropout: 0.36144415598895435
+hidden_dim: 256
+num_heads: 4
+dim_feedforward: 1
+num_layers: 2
+lr: 8.268434250803762e-05
+num_nodes: 800
+batch_size: 16
+Best Validation Accuracy: 0.7960
+==================================================
+Data: Photo
+Best Parameters:
+dropout: 0.25451678273936135
+hidden_dim: 128
+num_heads: 4
+dim_feedforward: 4
+num_layers: 3
+lr: 0.0004052989532912758
+num_nodes: 1600
+batch_size: 16
+Best Validation Accuracy: 0.9686
+==================================================
+Data: WikiCS
+Best Parameters:
+dropout: 0.34125109113281976
+hidden_dim: 320
+num_heads: 8
+dim_feedforward: 2
+num_layers: 1
+lr: 0.0005056127180635678
+num_nodes: 6400
+batch_size: 2
+Best Validation Accuracy: 0.8036
+==================================================
+Data: CS
+Best Parameters:
+dropout: 0.4137717601980612
+hidden_dim: 512
+num_heads: 4
+dim_feedforward: 3
+num_layers: 3
+lr: 5.131223145411043e-05
+num_nodes: 800
+batch_size: 32
+Best Validation Accuracy: 0.9662
+==================================================
+Data: Computers
+Best Parameters:
+dropout: 0.27890599960787926
+hidden_dim: 128
+num_heads: 4
+dim_feedforward: 2
+num_layers: 3
+lr: 0.0007276255058571116
+num_nodes: 2400
+batch_size: 8
+Best Validation Accuracy: 0.9157
+==================================================
+Data: Physics
+Best Parameters:
+dropout: 0.31453282851076886
+hidden_dim: 128
+num_heads: 2
+dim_feedforward: 4
+num_layers: 2
+lr: 0.0009865113555274313
+num_nodes: 1600
+batch_size: 32
+Best Validation Accuracy: 0.9768
+==================================================
+
+

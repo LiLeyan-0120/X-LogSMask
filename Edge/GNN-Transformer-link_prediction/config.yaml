@@ -1,0 +1,169 @@
+---
+
+
+
+# -------------------------------------------------------------------
+cora:            # Train model using Cora dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    metrics:          [MRR]    # Evaluation metrics
+    split:                        # Data split
+        test_prop:    0.2           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+        neg_ratio:    1             # Positive/negative edge ratio for validation and test sets
+    model:                        # Model parameters
+        dropout:      0.2900428862427288           # Dropout ratio
+        input_dim:    1433            # Node feature dimension
+        hidden_dim:   128            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.00014453710970845288         # Optimizer initial learning rate
+        epochs:       5000            # Number of training epochs
+        patience:     500            # Early stopping patience
+        weight_decay: 0.0005        # Optimizer weight decay
+        neg_per_pos: 5
+    sampling:
+        train_times_per_epoch: 16
+
+
+
+# -------------------------------------------------------------------
+citeseer:            # Train model using Citeseer dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    metrics:          [MRR]    # Evaluation metrics
+    split:                        # Data split
+        test_prop:    0.2           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+        neg_ratio:    1             # Positive/negative edge ratio for validation and test sets
+    model:                        # Model parameters
+        dropout:      0.2900428862427288           # Dropout ratio
+        input_dim:    3703            # Node feature dimension
+        hidden_dim:   512            # Hidden layer output feature dimension
+        num_heads: 8              # Number of attention heads, set according to GPU memory
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 3       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.00013912949909376026         # Optimizer initial learning rate
+        epochs:       5000            # Number of training epochs
+        patience:     500            # Early stopping patience
+        weight_decay: 0.001        # Optimizer weight decay
+        neg_per_pos: 8     # Positive/negative edge ratio for training set
+    sampling:
+        train_times_per_epoch: 16
+
+
+# -------------------------------------------------------------------
+pubmed:            # Train model using Pubmed dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    metrics:          [MRR]    # Evaluation metrics
+    split:                        # Data split
+        test_prop:    0.2           # Test set data ratio
+        valid_prop:   0.1           # Validation set data ratio
+        neg_ratio:    1             # Positive/negative edge ratio for validation and test sets
+    model:                        # Model parameters
+        dropout:      0.2900428862427288           # Dropout ratio
+        input_dim:    500            # Node feature dimension
+        hidden_dim:   256            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0014034010871621168         # Optimizer initial learning rate
+        epochs:       1000            # Number of training epochs
+        patience:     100            # Early stopping patience
+        weight_decay: 0.001        # Optimizer weight decay
+        neg_per_pos: 5
+    sampling:
+        train_times_per_epoch: 16
+
+
+# -------------------------------------------------------------------
+collab:            # Train model using Collab dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    metrics:          [HR@50]    # Evaluation metrics
+    model:                        # Model parameters
+        dropout:      0.2900428862427288           # Dropout ratio
+        input_dim:    128            # Node feature dimension
+        hidden_dim:   64            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 2       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.000915611363943115         # Optimizer initial learning rate
+        epochs:       10000            # Number of training epochs
+        patience:     500            # Early stopping patience
+        weight_decay: 0.001        # Optimizer weight decay
+        neg_per_pos: 5
+    sampling:
+        train_times_per_epoch: 16
+
+
+# -------------------------------------------------------------------
+PPA:            # Train model using PPA dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    metrics:          [HR@100]    # Evaluation metrics
+    model:                        # Model parameters
+        dropout:      0.2900428862427288           # Dropout ratio
+        input_dim:    58            # Node feature dimension
+        hidden_dim:   128            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 2       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.000915611363943115         # Optimizer initial learning rate
+        epochs:       1000            # Number of training epochs
+        patience:     100            # Early stopping patience
+        weight_decay: 0.001        # Optimizer weight decay
+        neg_per_pos: 5
+    sampling:
+        train_times_per_epoch: 16
+
+
+# -------------------------------------------------------------------
+Citation2:            # Train model using Citation2 dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    metrics:          [MRR]    # Evaluation metrics
+    model:                        # Model parameters
+        dropout:      0.2900428862427288           # Dropout ratio
+        input_dim:    128            # Node feature dimension
+        hidden_dim:   64            # Hidden layer output feature dimension
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 2       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.000915611363943115         # Optimizer initial learning rate
+        epochs:       5000            # Number of training epochs
+        patience:     500            # Early stopping patience
+        weight_decay: 0.001        # Optimizer weight decay
+        neg_per_pos: 5
+    sampling:
+        train_times_per_epoch: 16
+
+
+# -------------------------------------------------------------------
+DDI:            # Train model using DDI dataset (test acc:0.824)
+# -------------------------------------------------------------------
+    random_state:     42          # Random seed
+    metrics:          [HR@20]    # Evaluation metrics
+    model:                        # Model parameters
+        dropout:      0.0900428862427288           # Dropout ratio
+        input_dim:    128            # Node feature dimension
+        hidden_dim:   120            # Hidden layer output feature dimension
+        num_heads: 12              # Number of attention heads, set according to GPU memory
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 2       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.001         # Optimizer initial learning rate
+        epochs:       1000            # Number of training epochs
+        patience:     100            # Early stopping patience
+        weight_decay: 0.005        # Optimizer weight decay
+        neg_per_pos: 3
+    sampling:
+        train_times_per_epoch: 80

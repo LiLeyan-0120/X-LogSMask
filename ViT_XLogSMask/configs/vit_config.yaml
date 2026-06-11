@@ -1,0 +1,33 @@
+# CIFAR-10 dataset configuration
+seed: 42
+
+# Model selection
+model_type: vit  # Options: vit, vit_xlogsmask
+
+# Model parameters
+img_size: 32
+patch_size: 2
+in_channels: 3
+embed_dim: 256
+num_heads: 8
+num_layers: 8
+mlp_ratio: 4.0
+dropout: 0.1
+
+# Training parameters
+batch_size: 128
+epochs: 200
+lr: 0.001
+weight_decay: 0.05
+optimizer: adamw
+scheduler: cosine_warmup
+label_smoothing: 0.1
+patience: 20
+
+# Data augmentation
+use_mixup: True
+mixup_alpha: 0.2
+
+# Training optimization
+use_amp: True
+grad_clip: 1.0

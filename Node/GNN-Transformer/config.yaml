@@ -1,0 +1,185 @@
+---
+
+
+
+# -------------------------------------------------------------------
+cora:      # Train model using Cora dataset (test acc:0.827)
+# -------------------------------------------------------------------
+    sparse:           false       # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.5471391340112235              # Dropout ratio
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        input_dim: 1433           # Node feature dimension
+        hidden_dim: 256            # Hidden layer output feature dimension 256
+        output_dim: 7             # Number of node classes
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.00014453710970845288         # Optimizer initial learning rate
+        epochs:       3000          # Number of training epochs
+        patience:     300           # Early stopping patience
+        weight_decay: 0.0005        # Optimizer weight decay
+    sampling:
+
+        num_nodes:     800        # Number of subgraph node samples
+        batch_size:    4           # Subgraph sampling batch size
+
+
+# -------------------------------------------------------------------
+citeseer:  # Train model using Citeseer dataset
+# -------------------------------------------------------------------
+    sparse:           false       # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.5923673117461464              # Dropout ratio
+        num_heads: 8              # Number of attention heads, set according to GPU memory
+        input_dim: 3703           # Node feature dimension
+        hidden_dim: 512           # Hidden layer output feature dimension 256
+        output_dim: 6             # Number of node classes
+        num_layers: 2            # Number of transformer encoder layers
+        dim_feedforward: 3       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.00013912949909376026         # Optimizer initial learning rate
+        epochs:       5000          # Number of training epochs
+        patience:     1000           # Early stopping patience
+        weight_decay: 0.00033089136708031914        # Optimizer weight decay
+    sampling:
+        num_nodes: 1600        # Number of subgraph node samples
+        batch_size: 8           # Subgraph sampling batch size
+
+
+# -------------------------------------------------------------------
+pubmed:    # Train model using Pubmed dataset
+# -------------------------------------------------------------------
+    sparse:           false        # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.597631394821147              # Dropout ratio
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        input_dim: 500           # Node feature dimension
+        hidden_dim: 256            # Hidden layer output feature dimension
+        output_dim: 3        # Number of node classes
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0014034010871621168         # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     100           # Early stopping patience
+        weight_decay: 0.002859371039753239        # Optimizer weight decay
+    sampling:
+        num_nodes: 1600         # Number of subgraph node samples
+        batch_size: 4           # Subgraph sampling batch size
+
+
+# -------------------------------------------------------------------
+Computers:    # Train model using Computers dataset
+# -------------------------------------------------------------------
+    sparse:           false        # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.597631394821147              # Dropout ratio
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        input_dim: 767           # Node feature dimension
+        hidden_dim: 256            # Hidden layer output feature dimension
+        output_dim: 10        # Number of node classes
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0014034010871621168         # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     100           # Early stopping patience
+        weight_decay: 0.002859371039753239        # Optimizer weight decay
+    sampling:
+        num_nodes: 1600         # Number of subgraph node samples
+        batch_size: 4           # Subgraph sampling batch size
+
+# -------------------------------------------------------------------
+CS:    # Train model using CS dataset
+# -------------------------------------------------------------------
+    sparse:           false        # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.597631394821147              # Dropout ratio
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        input_dim: 6805           # Node feature dimension
+        hidden_dim: 256            # Hidden layer output feature dimension
+        output_dim: 15        # Number of node classes
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0014034010871621168         # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     100           # Early stopping patience
+        weight_decay: 0.002859371039753239        # Optimizer weight decay
+    sampling:
+        num_nodes: 1600         # Number of subgraph node samples
+        batch_size: 4           # Subgraph sampling batch size
+
+# -------------------------------------------------------------------
+Photo:    # Train model using Photo dataset (test acc:0.9686)
+# -------------------------------------------------------------------
+    sparse:           false        # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.25451678273936135              # Dropout ratio
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        input_dim: 745           # Node feature dimension
+        hidden_dim: 128            # Hidden layer output feature dimension
+        output_dim: 8        # Number of node classes
+        num_layers: 3            # Number of transformer encoder layers
+        dim_feedforward: 4       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0004052989532912758         # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     100           # Early stopping patience
+        weight_decay: 0.002859371039753239        # Optimizer weight decay
+    sampling:
+        num_nodes: 1600         # Number of subgraph node samples
+        batch_size: 16           # Subgraph sampling batch size
+
+# -------------------------------------------------------------------
+Physics:    # Train model using Physics dataset
+# -------------------------------------------------------------------
+    sparse:           false        # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.597631394821147              # Dropout ratio
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        input_dim: 8415           # Node feature dimension
+        hidden_dim: 256            # Hidden layer output feature dimension
+        output_dim: 5        # Number of node classes
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0014034010871621168         # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     100           # Early stopping patience
+        weight_decay: 0.002859371039753239        # Optimizer weight decay
+    sampling:
+        num_nodes: 1600         # Number of subgraph node samples
+        batch_size: 4           # Subgraph sampling batch size
+
+# -------------------------------------------------------------------
+WikiCS:    # Train model using WikiCS dataset
+# -------------------------------------------------------------------
+    sparse:           false        # Whether to use sparse data
+    random_state:     42          # Random seed
+    model:                        # Model parameters
+        dropout: 0.597631394821147              # Dropout ratio
+        num_heads: 4              # Number of attention heads, set according to GPU memory
+        input_dim: 300           # Node feature dimension
+        hidden_dim: 256            # Hidden layer output feature dimension
+        output_dim: 10        # Number of node classes
+        num_layers: 1            # Number of transformer encoder layers
+        dim_feedforward: 1       # FFN layer hidden dimension
+    hyper:                        # Training hyperparameters
+        lr:           0.0014034010871621168         # Optimizer initial learning rate
+        epochs:       1000          # Number of training epochs
+        patience:     100           # Early stopping patience
+        weight_decay: 0.002859371039753239        # Optimizer weight decay
+    sampling:
+        num_nodes: 1600         # Number of subgraph node samples
+        batch_size: 4           # Subgraph sampling batch size
+
+...

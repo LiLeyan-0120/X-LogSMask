@@ -1,0 +1,81 @@
+Data: COLLAB
+Best Parameters:
+dropout: 0.3597845066517744
+hidden_dim: 96
+num_heads: 2
+dim_feedforward: 3
+num_layers: 1
+lr: 0.0004171430962194586
+batch_size: 8
+Best Validation Accuracy: 0.7900
+==================================================
+Data: IMDB-BINARY
+Best Parameters:
+dropout: 0.34015848797753206
+hidden_dim: 192
+num_heads: 6
+dim_feedforward: 1
+num_layers: 3
+lr: 0.0004298893093927081
+batch_size: 64
+Best Validation Accuracy: 0.7600
+==================================================
+Data: MUTAG
+Best Parameters:
+dropout: 0.11378708690423364
+hidden_dim: 384
+num_heads: 4
+dim_feedforward: 3
+num_layers: 1
+lr: 0.002912384171221889
+batch_size: 8
+Best Validation Accuracy: 1.0000
+==================================================
+Data: PROTEINS
+Best Parameters:
+dropout: 0.5228763541126306
+hidden_dim: 192
+num_heads: 3
+dim_feedforward: 3
+num_layers: 1
+lr: 0.00010300196600986775
+batch_size: 8
+Best Validation Accuracy: 0.7568
+==================================================
+Data: NCI1
+Best Parameters:
+dropout: 0.05183974874620628
+hidden_dim: 48
+num_heads: 6
+dim_feedforward: 1
+num_layers: 2
+lr: 0.0004698647325862571
+batch_size: 4
+Best Validation Accuracy: 0.8224
+==================================================
+Data: DD
+Best Parameters:
+dropout: 0.24938559068281074
+hidden_dim: 192
+num_heads: 2
+dim_feedforward: 3
+num_layers: 1
+lr: 9.413813636993604e-05
+batch_size: 16
+Best Validation Accuracy: 0.8120
+==================================================
+Data: MOLHIV
+Best Parameters:
+dropout: 0.22472407130841748
+hidden_dim: 48
+num_heads: 6
+dim_feedforward: 3
+num_layers: 4
+lr: 0.00037520558551242813
+batch_size: 32
+Best Validation Accuracy: 0.7743
+==================================================
+
+
+
+

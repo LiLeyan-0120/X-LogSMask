@@ -1,0 +1,22 @@
+Data: cora
+Best Parameters:
+dropout: 0.4178894098995825
+hidden_dim: 384
+num_heads: 4
+dim_feedforward: 1
+num_layers: 3
+lr: 0.00035111456127071103
+train_times_per_epoch: 80
+Best Validation Accuracy: 0.7043
+==================================================
+Data: citeseer
+Best Parameters:
+dropout: 0.5305974217297784
+hidden_dim: 528
+num_heads: 4
+dim_feedforward: 2
+num_layers: 2
+lr: 0.0009346153369448267
+train_times_per_epoch: 60
+Best Validation Accuracy: 0.8055
+==================================================

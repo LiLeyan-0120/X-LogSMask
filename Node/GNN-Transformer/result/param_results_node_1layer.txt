@@ -1,0 +1,72 @@
+Data: cora
+Best Parameters:
+dropout: 0.7888476513327464
+hidden_dim: 192
+num_heads: 6
+dim_feedforward: 1
+num_layers: 1
+lr: 0.0009608163022779402
+num_nodes: 800
+batch_size: 4
+Best Validation Accuracy: 0.8080
+==================================================
+Data: citeseer
+Best Parameters:
+dropout: 0.7724173479731117
+hidden_dim: 192
+num_heads: 6
+dim_feedforward: 1
+num_layers: 1
+lr: 0.0003026063947011668
+num_nodes: 1600
+batch_size: 2
+Best Validation Accuracy: 0.7100
+==================================================
+Data: Photo
+Best Parameters:
+dropout: 0.745302026929621
+hidden_dim: 384
+num_heads: 8
+dim_feedforward: 1
+num_layers: 1
+lr: 0.00039234968793418456
+num_nodes: 800
+batch_size: 4
+Best Validation Accuracy: 0.9569
+==================================================
+Data: pubmed
+Best Parameters:
+dropout: 0.31134795623281
+hidden_dim: 384
+num_heads: 8
+dim_feedforward: 1
+num_layers: 1
+lr: 0.0006883300438556243
+num_nodes: 800
+batch_size: 4
+Best Validation Accuracy: 0.7920
+==================================================
+Data: CS
+Best Parameters:
+dropout: 0.7980566222499709
+hidden_dim: 768
+num_heads: 6
+dim_feedforward: 2
+num_layers: 1
+lr: 0.0003612078383768488
+num_nodes: 800
+batch_size: 4
+Best Validation Accuracy: 0.9656
+==================================================
+Data: Computers
+Best Parameters:
+dropout: 0.6848954383577329
+hidden_dim: 384
+num_heads: 8
+dim_feedforward: 3
+num_layers: 1
+lr: 0.00043221701864387663
+num_nodes: 1600
+batch_size: 2
+Best Validation Accuracy: 0.9121
+==================================================
