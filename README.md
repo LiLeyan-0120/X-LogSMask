@@ -217,10 +217,14 @@ CIFAR-10
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@article{li2026xlogsmask,
-  title={X-LogSMask: Expand Transformer for Graph-Structured Data},
-  author={Li, Leyan and Yang, Rennong and Zhang, Zhenxing and Hu, Liping},
-  year={2026}
+@misc{li2026xlogsmaskexpandtransformergraphstructured,
+      title={X-LogSMask: Expand Transformer for Graph-Structured Data}, 
+      author={Leyan Li and Rennong Yang and Zhenxing Zhang and Liping Hu},
+      year={2026},
+      eprint={2607.01553},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2607.01553}, 
 }
 ```
 
